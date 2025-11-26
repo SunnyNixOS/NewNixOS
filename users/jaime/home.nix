@@ -12,8 +12,6 @@ in {
     deModule
     ./git.nix
     "${flakeroot}/home/wrappers/gnucash.nix"
-    "${flakeroot}/home/stylix/main.nix"
-
     ];
 
   

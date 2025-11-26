@@ -16,6 +16,7 @@ in {
       "${flakeroot}/programs/installation.nix"
       "${flakeroot}/programs/flatpaks.nix"
       deModule
+      "${flakeroot}/modules/stylix/main.nix"
     ];
 
   networking.hostName = "jaime-nix-gamingdesktop";
