@@ -19,10 +19,10 @@
     ];
 
     monitor = [
-      "HDMI-A-1,1920x1080@120.0,5760x102,1.0,transform,1,bitdepth,8" # To get monitor config on a new setup,
-                       # use nwg-display, setup config and then find the
-      "DP-2,1920x1080@143.98,1920x685,1.0,bitdepth,8"    # text at ~/.config/hypr/monitors.conf
-      "DP-3,1920x1080@143.98,3840x685,1.0,bitdepth,8"
+      # use a program to distinguish monitors.
+      "HDMI-A-1,1920x1080@120.0,5760x102,1.0,transform,1,bitdepth,8" # portrait monitor
+      "DP-2,1920x1080@143.98,1920x685,1.0,bitdepth,8"                # left monitor
+      "DP-3,1920x1080@143.98,3840x685,1.0,bitdepth,8"                # main monitor
     ];
 
     # Keybindings
@@ -44,10 +44,18 @@
       "$mainMod, l, movefocus, r"
       ##########################################
 
-      "$mainMod, 1, workspace, 1"
-      "$mainMod, 2, workspace, 2"
-      "$mainMod, 3, workspace, 3"
-      "$mainMod, n, workspace, empty"
+
+      # move left and right workspaces with vim bindings
+      "ALT, h, workspace, r-1"
+      "ALT, l, workspace, r+1"
+
+      # send window to left workspace and follow
+      "$mainMod, y, movetoworkspacesilent, r-1"
+      "$mainMod, y, workspace, r-1"
+
+      # send window to right workspace and follow
+      "$mainMod, o, movetoworkspacesilent, r+1"
+      "$mainMod, o, workspace, r+1"
 
     ];
     bindm = [
