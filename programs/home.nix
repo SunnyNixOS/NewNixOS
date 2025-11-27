@@ -1,5 +1,12 @@
 { config, pkgs, lib, stylix, theme, ... }:
   {
-programs.kitty.enable = true;
+    programs = {
+        kitty = {
+            enable = true;
+        };
+        vesktop.enable = true;
+        vscode.enable = true;
+        yazi.enable = true;
+    };
 
   }

@@ -5,11 +5,9 @@
   environment.systemPackages = with pkgs; [
      git
      wl-clipboard
-     vesktop
      steam
      xivlauncher
      obsidian
-     vscode
      obs-studio
      audacity
      bitwarden-desktop
@@ -37,7 +35,6 @@
      vimPlugins.nvchad
      nixd
      jellyfin-media-player
-     yazi
      vivaldi
      vivaldi-ffmpeg-codecs
   ];

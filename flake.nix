@@ -35,6 +35,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
+                backupFileExtension = "backup";
                 users = {
                   jaime = ./users/jaime/home.nix;
                 };
