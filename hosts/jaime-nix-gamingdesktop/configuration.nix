@@ -13,7 +13,7 @@ in {
       ./gpu.nix
       ./filesystems.nix
       "${flakeroot}/users/jaime/jaime.nix"
-      "${flakeroot}/programs/installation.nix"
+      "${flakeroot}/programs/main.nix"
       "${flakeroot}/programs/flatpaks.nix"
       deModule
       "${flakeroot}/modules/stylix/main.nix"

@@ -1,6 +1,5 @@
 { config, pkgs, lib, stylix, theme, ... }:
   {
-stylix.autoEnable = true;
+programs.kitty.enable = true;
 
   }
-

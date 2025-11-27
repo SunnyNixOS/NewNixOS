@@ -38,7 +38,6 @@
      nixd
      jellyfin-media-player
      yazi
-     kitty
      vivaldi
      vivaldi-ffmpeg-codecs
   ];
