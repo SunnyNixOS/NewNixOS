@@ -1,9 +1,13 @@
-{ config, pkgs, lib, stylix, ... }:
+{ config, pkgs, lib, stylix, theme, ... }:
   {
 
-    stylix.enable = true;
-    stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-    stylix.polarity = "dark";
+    stylix = lib.mkMerge [
+    (lib.mkIf (theme == "catppuccin-mocha") {
+      enable = true;
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+      polarity = "dark";
+    })
+   ];
 
   }
 

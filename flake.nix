@@ -16,6 +16,7 @@
       system = "x86_64-linux";
       flakeroot = self;
       de = "hyprland";
+      theme = "catppuccin-mocha";
     in {
       nixosConfigurations = {
         jaime-nix-gamingdesktop = nixpkgs.lib.nixosSystem {
@@ -23,6 +24,7 @@
           specialArgs = {
             inherit flakeroot;
             inherit de;
+            inherit theme;
           };
           modules = [
             ./hosts/jaime-nix-gamingdesktop/configuration.nix 
@@ -39,6 +41,7 @@
                 extraSpecialArgs = {
                   inherit flakeroot;
                   inherit de;
+                  inherit theme;
                 };
               };
             }
