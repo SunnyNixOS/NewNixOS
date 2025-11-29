@@ -31,7 +31,7 @@
      r2modman
      mangohud
      vulkan-tools
-     neovim
+     neovim-unwrapped
      nixd
      jellyfin-media-player
      vivaldi

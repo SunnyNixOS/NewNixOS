@@ -9,9 +9,13 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
     stylix.url = "github:danth/stylix/release-25.05";
+    nvf = {
+      url = "github:NotAShelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, stylix, ... }:
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, stylix, nvf, ... }:
     let
       system = "x86_64-linux";
       flakeroot = self;
@@ -31,6 +35,7 @@
             nix-flatpak.nixosModules.nix-flatpak
             home-manager.nixosModules.home-manager
             stylix.nixosModules.stylix
+            nvf.nixosModules.default
             {
               home-manager = {
                 useGlobalPkgs = true;
