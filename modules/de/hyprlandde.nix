@@ -39,6 +39,13 @@
   };
 };
 
+# fixing bluetooth disconnects
+hardware.xpadneo.enable = true;
+boot.kernelParams = [
+  "bluetooth.disable_ertm=1"
+  "usbcore.autosuspend=-1"
+];
+
 
 environment.systemPackages = with pkgs;
   [
