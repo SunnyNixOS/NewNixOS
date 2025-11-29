@@ -12,7 +12,6 @@
   # Declare flatpaks you want to download here
   services.flatpak.packages = [
     "org.vinegarhq.Sober"
-    "com.parsecgaming.parsec"
   ];
   
 }  

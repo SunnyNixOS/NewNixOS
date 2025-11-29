@@ -15,7 +15,7 @@
 
     exec-once = [
       "hyprpanel"
-
+      "xrandr --output DP-3 --primary"
     ];
 
     monitor = [
@@ -50,12 +50,12 @@
       "ALT, l, workspace, r+1"
 
       # send window to left workspace and follow
-      "$mainMod, y, movetoworkspacesilent, r-1"
-      "$mainMod, y, workspace, r-1"
+      "ALT, y, movetoworkspacesilent, r-1"
+      "ALT, y, workspace, r-1"
 
       # send window to right workspace and follow
-      "$mainMod, o, movetoworkspacesilent, r+1"
-      "$mainMod, o, workspace, r+1"
+      "ALT, o, movetoworkspacesilent, r+1"
+      "ALT, o, workspace, r+1"
 
     ];
     bindm = [
@@ -71,6 +71,12 @@
     bindl = [
       ", XF86AudioPlay, exec, playerctl play-pause" # the stupid key is called play , but it toggles
     ];
+
+    windowrulev2 = [
+      "float, class:com.gabm.satty"
+      "center, class:com.gabm.satty"
+      "size 900 900, class:com.gabm.satty"
+      ];
        };
     };
 }

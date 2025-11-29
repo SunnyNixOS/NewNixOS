@@ -32,11 +32,14 @@
      mangohud
      vulkan-tools
      neovim
-     vimPlugins.nvchad
      nixd
      jellyfin-media-player
      vivaldi
      vivaldi-ffmpeg-codecs
+     unzip
+     p7zip
+     parsec-bin
+     clang-tools
   ];
   # Enable your installed stuff here
   services.mullvad-vpn.enable = true;
