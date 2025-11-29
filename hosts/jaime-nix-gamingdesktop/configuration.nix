@@ -18,6 +18,7 @@ in {
       "${flakeroot}/programs/retroarch.nix"
       deModule
       "${flakeroot}/modules/stylix/main.nix"
+      "${flakeroot}/modules/nvf/main.nix"
     ];
 
   networking.hostName = "jaime-nix-gamingdesktop";
