@@ -6,7 +6,7 @@
         };
         vesktop.enable = true;
         vscode.enable = true;
-        yazi.enable = true;
+        bash.enable = true;
     };
 
   }
