@@ -12,6 +12,7 @@ in {
       ./hardware-configuration.nix
       ./gpu.nix
       ./filesystems.nix
+      ./alias.nix
       "${flakeroot}/users/jaime/jaime.nix"
       "${flakeroot}/programs/main.nix"
       "${flakeroot}/programs/flatpaks.nix"
