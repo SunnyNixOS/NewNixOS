@@ -20,6 +20,7 @@ in {
       deModule
       "${flakeroot}/modules/stylix/main.nix"
       "${flakeroot}/modules/nvf/main.nix"
+      "${flakeroot}/modules/docker/docker.nix"
     ];
 
   networking.hostName = "jaime-nix-gamingdesktop";
