@@ -21,6 +21,8 @@ in {
       "${flakeroot}/modules/stylix/main.nix"
       "${flakeroot}/modules/nvf/main.nix"
       "${flakeroot}/modules/docker/docker.nix"
+      "${flakeroot}/modules/ai/ollama.nix"
+
     ];
 
   networking.hostName = "jaime-nix-gamingdesktop";

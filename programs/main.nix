@@ -40,7 +40,6 @@
      p7zip
      parsec-bin
      clang-tools
-     ollama-cuda
   ];
   # Enable your installed stuff here
   services.mullvad-vpn.enable = true;
