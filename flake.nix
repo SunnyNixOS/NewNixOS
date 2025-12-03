@@ -2,18 +2,31 @@
   description = "Sunny's new NixOS flake for gaming";
 
   inputs = {
+
+    # this is the main version of your system
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    
+    # all these flake modules should follow your nixpkgs version
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
-    stylix.url = "github:danth/stylix/release-25.05";
+
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nvf = {
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
+    
+    # does not follow nixpkgs; check github for "tags" releases
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0";
+
+    };
+
 
   outputs = { self, nixpkgs, home-manager, nix-flatpak, stylix, nvf, ... }:
     let
