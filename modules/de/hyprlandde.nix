@@ -56,7 +56,7 @@ environment.systemPackages = with pkgs;
     hyprshot
     nemo
     satty
-    rofi-wayland
+    rofi
     blueman
     hyprsunset
     hyprpaper

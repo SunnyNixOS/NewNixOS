@@ -14,7 +14,6 @@
      gearlever
      prismlauncher
      mullvad-vpn
-     davinci-resolve-studio
      gimp3
      dconf-editor
      anki
@@ -33,7 +32,6 @@
      vulkan-tools
      neovim-unwrapped
      nixd
-     jellyfin-media-player
      vivaldi
      vivaldi-ffmpeg-codecs
      unzip

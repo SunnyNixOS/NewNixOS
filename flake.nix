@@ -8,17 +8,23 @@
     
     # all these flake modules should follow your nixpkgs version
     home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/home-manager/release-25.11";
+
+
+      # inputs. follows didn't work so im commenting this line out
+      #inputs.nixpkgs.follows = "nixpkgs";
     };
 
     stylix = {
-      url = "github:nix-community/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/stylix/release-25.11";
+
+      # look at home manager for comment
+      #inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:NotAShelf/nvf";
+    nvf = { 
+      #no 25.11 release at time of writing
+      url = "github:NotAShelf/nvf"; #/release-25.11;
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
