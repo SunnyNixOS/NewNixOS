@@ -24,7 +24,7 @@
 
     nvf = { 
       #no 25.11 release at time of writing
-      url = "github:NotAShelf/nvf"; #/release-25.11;
+      url = "github:NotAShelf/nvf/v0.8";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     

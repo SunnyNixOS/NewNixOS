@@ -60,5 +60,6 @@ environment.systemPackages = with pkgs;
     blueman
     hyprsunset
     hyprpaper
+    catppuccin-cursors.mochaYellow
   ];
   }

@@ -38,6 +38,7 @@
      p7zip
      parsec-bin
      clang-tools
+     davinci-resolve-studio
   ];
   # Enable your installed stuff here
   services.mullvad-vpn.enable = true;
