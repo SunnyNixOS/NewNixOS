@@ -22,6 +22,32 @@
                     shiftwidth = 2;
                 };
 
+                globals = {
+                  mapleader = " ";
+                  maplocalleader = " ";
+                };
+
+                keymaps = [
+              {
+                key = "<leader>y";
+                mode = "n";
+                silent = true;
+                action = ":Yazi<CR>";
+              }
+
+              {
+                key = "<leader>ff";
+                mode = "n";
+                action = "<cmd>Telescope find_files<CR>";
+              }
+            
+              {
+                key = "<leader>fg";
+                mode = "n";
+                action = "<cmd>Telescope live_grep<CR>";
+              }
+                ];
+
 
                 clipboard = {
                     enable = true;
