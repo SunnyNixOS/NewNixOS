@@ -16,7 +16,7 @@ in {
       "${flakeroot}/users/jaime/jaime.nix"
       "${flakeroot}/programs/main.nix"
       "${flakeroot}/programs/flatpaks.nix"
-      "${flakeroot}/programs/retroarch.nix"
+      #"${flakeroot}/programs/retroarch.nix"
       deModule
       "${flakeroot}/modules/stylix/main.nix"
       "${flakeroot}/modules/nvf/main.nix"

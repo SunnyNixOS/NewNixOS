@@ -24,11 +24,11 @@
     General = {
       # Shows battery charge of connected devices on supported
       # Bluetooth adapters. Defaults to 'false'.
-      Experimental = true;
+      Experimental = false;
       # When enabled other devices can connect faster to us, however
       # the tradeoff is increased power consumption. Defaults to
       # 'false'.
-      FastConnectable = true;
+      FastConnectable = false;
     };
     Policy = {
       # Enable all controllers when they are found. This includes
