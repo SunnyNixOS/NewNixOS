@@ -11,12 +11,12 @@ in {
     [
     deModule
     ./git.nix
+    ./defaults.nix
     "${flakeroot}/home/wrappers/gnucash.nix"
     "${flakeroot}/programs/home.nix"
     "${flakeroot}/modules/stylix/home.nix"
     "${flakeroot}/modules/yazi/yazi-home.nix"
     ];
-
   
   programs.home-manager.enable = true;
 

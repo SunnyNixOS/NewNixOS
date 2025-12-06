@@ -1,0 +1,18 @@
+# copy files
+- y (yank)
+- p (paste)
+
+# move files
+- x (yank with cut)
+- p (paste)
+
+# open tab
+- t
+
+# rename file
+- r
+
+# add new file
+-a
+
+
