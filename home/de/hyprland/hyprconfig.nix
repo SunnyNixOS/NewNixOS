@@ -18,13 +18,6 @@
       "xrandr --output DP-3 --primary"
     ];
 
-    monitor = [
-      # use a program to distinguish monitors.
-      "HDMI-A-1,1920x1080@120.0,5760x102,1.0,transform,1,bitdepth,8" # portrait monitor
-      "DP-2,1920x1080@143.98,1920x685,1.0,bitdepth,8"                # left monitor
-      "DP-3,1920x1080@143.98,3840x685,1.0,bitdepth,8"                # main monitor
-    ];
-
     # Keybindings
     bind = [
       "$mainMod, Return, exec, $terminal"        # Open terminal
@@ -77,6 +70,10 @@
       "center, class:com.gabm.satty"
       "size 900 900, class:com.gabm.satty"
       ];
+
+    source = ''
+          ~/.config/hypr/monitors.conf
+          '';
        };
     };
 }
