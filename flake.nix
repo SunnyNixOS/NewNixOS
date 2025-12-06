@@ -72,6 +72,37 @@
             }
           ];
         };
+        jaime-nix-gaminglaptop = nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = {
+            inherit flakeroot;
+            inherit de;
+            inherit theme;
+          };
+          modules = [
+            ./hosts/jaime-nix-gaminglaptop/configuration.nix 
+            nix-flatpak.nixosModules.nix-flatpak
+            home-manager.nixosModules.home-manager
+            stylix.nixosModules.stylix
+            nvf.nixosModules.default
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                backupFileExtension = "backup";
+                users = {
+                  jaime = ./users/jaime/home.nix;
+                };
+                extraSpecialArgs = {
+                  inherit flakeroot;
+                  inherit de;
+                  inherit theme;
+                };
+              };
+            }
+          ];
+        };
+
       };
     };
 }
