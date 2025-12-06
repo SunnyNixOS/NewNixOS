@@ -23,7 +23,10 @@ in {
       #      "${flakeroot}/modules/ai/ollama.nix"
 
     ];
-
+  environment.variables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
   networking.hostName = "jaime-nix-gaminglaptop";
 
   # Bootloader.
