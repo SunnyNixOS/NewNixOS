@@ -4,6 +4,7 @@
   # Look up the NixOS Package Search Repository to add packages down below to add them on the system
   environment.systemPackages = with pkgs; [
      git
+     upower
      wl-clipboard
      steam
      xivlauncher
