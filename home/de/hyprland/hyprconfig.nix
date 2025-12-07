@@ -15,7 +15,6 @@
 
     exec-once = [
       "hyprpanel"
-      "xrandr --output DP-3 --primary"
     ];
 
     # Keybindings
@@ -50,6 +49,8 @@
       "ALT, o, movetoworkspacesilent, r+1"
       "ALT, o, workspace, r+1"
 
+      ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
     ];
     bindm = [
     "$mainMod, mouse:272, movewindow"
@@ -57,8 +58,8 @@
     "$mainMod, mouse:273, resizewindow"
     ];
     bindle = [
-      ", XF86AudioRaiseVolume, exec, vol --up"
-      ", XF86AudioLowerVolume, exec, vol --down"
+      ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
+      ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
     ];
 
     bindl = [
