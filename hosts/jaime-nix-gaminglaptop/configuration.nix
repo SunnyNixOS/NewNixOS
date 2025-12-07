@@ -25,7 +25,6 @@ in {
     ];
   environment.variables = {
     EDITOR = "nvim";
-    VISUAL = "nvim";
   };
   networking.hostName = "jaime-nix-gaminglaptop";
 

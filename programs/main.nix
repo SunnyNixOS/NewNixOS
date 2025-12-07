@@ -39,6 +39,7 @@
      parsec-bin
      clang-tools
      davinci-resolve-studio
+     steam-run
   ];
   # Enable your installed stuff here
   services.mullvad-vpn.enable = true;

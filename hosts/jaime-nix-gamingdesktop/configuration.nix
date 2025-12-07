@@ -28,7 +28,6 @@ in {
   networking.hostName = "jaime-nix-gamingdesktop";
   environment.variables = {
     EDITOR = "nvim";
-    VISUAL = "nvim";
   };
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

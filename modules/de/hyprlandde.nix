@@ -57,7 +57,6 @@ environment.systemPackages = with pkgs;
     nemo
     satty
     rofi
-    blueman
     hyprsunset
     hyprpaper
     catppuccin-cursors.mochaYellow
