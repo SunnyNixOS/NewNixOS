@@ -47,10 +47,21 @@ in {
   
   # Configuring Nvidia Shader Cache size
   environment.variables = {
+    
+    # enables shader caching
+
+    __GL_SHADER_DISK_CACHE=1;
     # Where the shader cache will live
     __GL_SHADER_DISK_CACHE_PATH = "${myHome}/.nv/GLCache";
 
-    # Shader cache size limit (20 GB)
-    __GL_SHADER_DISK_CACHE_SIZE = "21474836480";
+    # Shader cache size limit (50 GB)
+    __GL_SHADER_DISK_CACHE_SIZE = "53687091200";
+
+    # prevents shader cache cleanup
+    __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1;
+
+
+
+
   };
 }
