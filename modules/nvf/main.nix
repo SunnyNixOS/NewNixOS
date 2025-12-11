@@ -46,6 +46,13 @@
                 mode = "n";
                 action = "<cmd>Telescope live_grep<CR>";
               }
+          
+              {
+                key = "<leader>d";
+                mode = "n";
+                action = ":lua vim.diagnostic.open_float()<CR>";
+                desc = "Show LSP diagnostic under cursor";
+              }
                 ];
 
 
