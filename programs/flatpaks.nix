@@ -12,7 +12,7 @@
   # Declare flatpaks you want to download here
   services.flatpak.packages = [
     "org.vinegarhq.Sober"
-    "org.DolphinEmu.dolphin-emu"
+    "com.core447.StreamController"
   ];
   
 }  

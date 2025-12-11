@@ -65,6 +65,8 @@
 
                     nix.enable = true;
                     python.enable = true;
+                    css.enable = true;
+                    html.enable = true;
                 };
 
                 statusline.lualine = {

@@ -76,6 +76,19 @@ in {
     pulse.enable = true;
     };
 
+  environment.etc."alsa/conf.d/99-buffer.conf".text = ''
+    pcm.!default {
+        type hw
+        card 0
+        period_size 1024
+        buffer_size 4096
+    }
+
+    ctl.!default {
+        type hw
+        card 0
+    }
+  '';
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 

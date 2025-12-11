@@ -23,7 +23,6 @@
      gnucash
      rclone
      flameshot
-     streamcontroller
      qbittorrent
      brave
      protonup-qt
@@ -41,6 +40,8 @@
      clang-tools
      davinci-resolve-studio
      steam-run
+     lsfg-vk
+     lsfg-vk-ui
   ];
   # Enable your installed stuff here
   services.mullvad-vpn.enable = true;
